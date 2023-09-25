@@ -1,0 +1,15 @@
+[devservers]
+dev_1 ansible_host=54.198.79.48
+
+[prodservers]
+dev_2 ansible_host=54.198.79.49
+
+[devservers:vars]
+ansible_python_interpreter=/usr/bin/python3
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/home/ubuntu/.ssh/ansible-all-access-key.pem
+OR
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/home/ubuntu/.ssh/ansible-all-access-key.pem

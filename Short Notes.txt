@@ -1,0 +1,33 @@
+1. It is free to use by everyone (pay for enterprise version, Ansible tower).
+
+2. It is very consistent and light weight and no constraints regarding the OS or underlying hardware are present.
+
+3. it is very secure due to agentless capabilities and open ssh security features
+ 
+4. it uses YAML language (yet another markup language).
+
+5. PUSH Mechanism (we will push forcefully from Ansible server to node servers)
+
+============Important Terms==============================
+
+Ansible server-> the machine where ansible is installed and from which all task and playbooks will be run
+
+Module-> Basically, a module is a command or set of similar commands meant to be executed on the client-side.
+
+Task-> A task is a section that consists of a single procedure to be completed.
+
+Role-> A way of organising tasks and related files to be later called in a playbook.
+
+Fact-> Information fetched from the client system from the global variables with the gather-facts operation.
+
+Inventory-> File containing data about the ansible client servers.
+
+Play-> Execution of a Playbook.
+
+Handler-> Task which is called only if a notifier is present.
+
+Notifier-> Section attributed to a task which calls a handler if the output is changed
+
+Playbooks-> It consists of code in YAML format, which describes tasks to be executed.
+
+Host-> Nodes, which are automated by ansible.
